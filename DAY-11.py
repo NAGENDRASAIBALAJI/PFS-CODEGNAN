@@ -1,80 +1,48 @@
 '''
-DAY--11 OF MY PYTHON
+FILE HANDLING:
+--------------
+-->FILE HANDLING IS AN OBJECT OF FILE TO MAINTAIN SEVERAL FUNCTION OF FILE LIKE,
+CREATING, READING, UPDATING AND DELETING THE FILE...
 
-ERROR HANDLING:
----------------
-TRY BLOCK:
----> THE TRY BLOCK,TEST A BLOCK OF CODE FOR ERROR
-
-EXCEPT BLOCK:
---> THE EXCEPT BLOCK LET HAND IF THE CODE CONTAIN ERRORS...
+OPEN A FILE:
+------------
+1.OPEN()
+2.WITH OPEN()
 
 
-ELSE:
+MODES:
+------
+
+'R'-->IS USED TO READING THE FILE, ERROR  IF FILE DOES NOT EXIST...
+'A'-->IS USED TO ADD THE TEXT INTO FILE AT LAST INDEX, IF  FILE DOES NOT EXIST..
+'W'-->IS USED TO ADD THE TEXT INTO FILE BUT IT WILL OVERRIDE OF ALL TEXT INSIDE FILE..
+IF THE FILE DOES NOT EXIST IT WILL CREAT WITH THAT NAME..
+'X'-->USED TO CREATE THE FILE...BUT WILL THROUG ERROR IF WE ARE USED 'R' MODE TO CREAT...
+
+
+METHOD:
+-------
+WRITE()
+READ():
+-------
+--> THIS METHOD CAN READ ENTIRE FILE CHUNK BY CHUNK WHERE WE CAN SPECIFY THE SIDE
+
+READLINE():
+-----------
+--> CAN READ ONLYB ONE LINE AT A TIME IN FILE...
+
+READLINES():
+------------
+-->IT WILL READ ENTIRE FILE AND GIVES IN A LIST WHERE EACH LINE IS EACH INDEX IN THE LIST
+EX:
 -----
--->THIS WILL BE EXCUTED, IF ANY BLOCK HAS NO ERROR IN THE CODE...
-
-FINALLY BLOCK:
---->THIS WILL BE EXCUTED EITHER TRY BLOCK CONTAIN ERROR OR NOT...
-
---------------------------
-EX1:
-try:
-    print("HAI")
-
-except:
-    print('this will handle zerodivisionerror')
-
-else:
-    print("no error")
-----------------------
-
-try:
-    print(a)
-    print(5+"HAI")
-
-except typeerror:
-    print('this will handle typeerror')
-except nameerror:
-    print("this will handle nameerror")
-
-else:
-    print("no error")
+with open ('demo, txt','w') as any_:
+    any_.write('hello')
+----------------------------
+f = open('Practice.txt', 'r')
+print(f.read())
+f.close()
+-----------------------
 
 '''
 
-try:
-    PRINT("hAI")
-
-except:
-    print("error")
-else:
-    print('no error')
-finally:
-    print('end')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
